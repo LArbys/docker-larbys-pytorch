@@ -1,9 +1,9 @@
-FROM twongjirad/docker-ubuntu16.04-root:6.12.04_cuda9.1
+FROM twongjirad/docker-ubuntu16.04-root:6.12.04_cuda8.0
 
 MAINTAINER taritree.wongjirad@tufts.edu
 
 RUN apt-get update && apt-get install -y python-pip && \
-    	    pip install http://download.pytorch.org/whl/cu91/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl \
+    	    pip install http://download.pytorch.org/whl/cu80/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl \
 	    && pip install torchvision \
 	    && apt-get autoremove -y && apt-get clean -y
 
