@@ -1,4 +1,4 @@
-FROM twongjirad/docker-ubuntu16.04-root:6.12.04_cuda9.1
+FROM twongjirad/docker-ubuntu16.04-root:6.12.04_cuda8.0
 
 MAINTAINER taritree.wongjirad@tufts.edu
 
